@@ -1,0 +1,64 @@
+.clear {
+    background-image: url(https://ak.picdn.net/shutterstock/videos/1022659633/thumb/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.clouds {
+    background-image: url(https://bloximages.newyork1.vip.townnews.com/wfmz.com/content/tncms/assets/v3/editorial/4/4e/44e3c377-a81e-5171-bce6-5395128cfbc8/5d7668f7055bb.image.jpg?resize=400%2C341);
+    background-size: cover;
+    background-position: center;
+}
+.rain {
+    background-image: url(https://paysages.photos/wp-content/uploads/2017/06/photo-paysage-pluie-3-8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.snow {
+    background-image: url(https://static.actu.fr/uploads/2019/04/snow-1209991_1920-960x640.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body{
+    font-family: 'Trebuchet MS ';
+    text-align: center;
+    color: rgb(37, 35, 35);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+i.wi {
+    font-size: 5em;
+    line-height: 3em;
+}
+h1 {
+    font-size: 2em;
+}
+.tooltip {
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    transition: opacity .3s, top .5s;
+}
+h1:hover .tooltip {
+    top: -50px;
+    opacity: 1;
+
+}

@@ -1,27 +1,30 @@
 
-// let now = new Date();
-// let annee   = now.getFullYear();
-// let mois    = now.getMonth() + 1;
-// let jour    = now.getDate();
-// let heure   = now.getHours();
-// let minute  = now.getMinutes();
-// let seconde = now.getSeconds();
-// document.write(+jour+"/"+mois+"/"+annee+ +heure+" heure "+minute+" minutes "+seconde+" secondes" );
- 
+var aujourdhui = new Date(); 
+var annee = aujourdhui.getFullYear(); // retourne le millésime
+var mois =aujourdhui.getMonth()+1; // date.getMonth retourne un entier entre 0 et 11 donc il faut ajouter 1
+var jour = aujourdhui.getDate(); // retourne le jour (1à 31)
+var joursemaine = aujourdhui.getDay() ; // retourne un entier compris entre 0 et 6 (0 pour dimanche)
+var tab_jour=new Array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi");
+document.write("<BR>");
+document.write( jour + '/' + mois + '/' + annee) ; 
+document.write("<BR>");
+document.write( tab_jour[joursemaine]) ; 
+
+
 // alert( "Nous sommes le "+jour+"/"+mois+"/"+annee+" et il est "+heure+" heure "+minute+" minutes "+seconde+" secondes" );
 
-var ladate=new Date()
-document.write("Heure brute : ");
-document.write(ladate.getHours()+":"+ladate.getMinutes()+":"+ladate.getSeconds())
-document.write("<BR>");
-var h=ladate.getHours();
-if (h<10) {h = "0" + h}
-var m=ladate.getMinutes();
-if (m<10) {m = "0" + m}
-var s=ladate.getSeconds();
-if (s<10) {s = "0" + s}
-document.write("Heure formatée : ");
-document.write(h+":"+m+":"+s)
+// var ladate=new Date()
+// document.write("Heure brute : ");
+// document.write(ladate.getHours()+":"+ladate.getMinutes()+":"+ladate.getSeconds())
+// document.write("<BR>");
+// var h=ladate.getHours();
+// if (h<10) {h = "0" + h}
+// var m=ladate.getMinutes();
+// if (m<10) {m = "0" + m}
+// var s=ladate.getSeconds();
+// if (s<10) {s = "0" + s}
+// document.write("Heure formatée : ");
+// document.write(h+":"+m+":"+s)
 
 const weatherIcons = {
     "Rain": "wi wi-day-rain",
